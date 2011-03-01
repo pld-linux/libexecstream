@@ -53,7 +53,7 @@ Statyczna biblioteka libexecstream.
 
 %build
 libtool --mode=compile --tag=CXX %{__cxx} %{rpmcxxflags} -c exec-stream.cpp
-libtool --mode=link --tag=CXX %{__cxx} -shared %{rpmldflags} %{rpmcxxflags} \
+libtool --mode=link --tag=CXX %{__cxx} %{rpmldflags} %{rpmcxxflags} \
 	-o libexecstream.la exec-stream.lo -lpthread -rpath %{_libdir}
 
 %install
